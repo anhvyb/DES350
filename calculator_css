@@ -9,7 +9,7 @@ margin-bottom: 20px;
 margin-left: 15px;}
 
 
-#top_display {
+#top_display {display: block;
 	margin-left: 30px;
 	background-color: cornflowerblue;
 	padding-bottom: 20px;
@@ -25,20 +25,20 @@ margin-left: 15px;}
 height: 100px;
 text-indent:10pt;
 margin-top: 50px;
-border-bottom-left-radius: 20%;
-border-bottom-right-radius: 20%;
-border-top-left-radius: 20%;
-border-top-right-radius: 20%;
-background-color:lightgray;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+	background-color:lightgray;}
 
 .inputRow {display: block;}
 
 .clear {display: block;
 width: 379px;
-border-bottom-left-radius: 25%;
-border-bottom-right-radius: 25%;
-border-top-left-radius: 25%;
-border-top-right-radius: 25%;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
 background-color:lightcoral;
 	
 }	
