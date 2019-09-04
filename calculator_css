@@ -2,24 +2,66 @@
 input {outline: 0;
 border: none;
 color: #1aa;
-background-color:antiquewhite;
 width: 80px;
 height: 80px;
 font-size: 30px;
 margin-bottom: 20px;
 margin-left: 15px;}
 
-#top_display {display: block;}
+
+#top_display {
+	margin-left: 30px;
+	background-color: cornflowerblue;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-right: 65%;
+	border-bottom-left-radius: 5%;
+	border-bottom-right-radius: 5%;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+
+}
 #display {width: 375px;
 height: 100px;
 text-indent:10pt;
-}
+margin-top: 50px;
+border-bottom-left-radius: 20%;
+border-bottom-right-radius: 20%;
+border-top-left-radius: 20%;
+border-top-right-radius: 20%;
+background-color:lightgray;
 
 .inputRow {display: block;}
 
-.equals {display: block;
+.clear {display: block;
 width: 379px;
-	}
+border-bottom-left-radius: 25%;
+border-bottom-right-radius: 25%;
+border-top-left-radius: 25%;
+border-top-right-radius: 25%;
+background-color:lightcoral;
+	
+}	
+.number {border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;
+border-top-left-radius: 15%;
+border-top-right-radius: 15%;
+background-color:antiquewhite;}
+.decimal {border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;
+border-top-left-radius: 15%;
+border-top-right-radius: 15%;
+background-color:burlywood;}
+.operator {border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;
+border-top-left-radius: 15%;
+border-top-right-radius: 15%;
+background-color:burlywood;}
+.equals{border-bottom-left-radius: 15%;
+border-bottom-right-radius: 15%;
+border-top-left-radius: 15%;
+border-top-right-radius: 15%;
+background-color:lightcoral;}
 [class=number]:hover {
   background-color: #FF3366;}
 [class=operator]:hover {
@@ -29,6 +71,4 @@ width: 379px;
 [class=equals]:hover {
   background-color: #FF3366;}
 [class=decimal]:hover {
-  background-color: #FF3366;}
-[class=display]:hover {
   background-color: #FF3366;}
