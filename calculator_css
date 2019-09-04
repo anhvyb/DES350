@@ -1,0 +1,34 @@
+@charset "utf-8";
+input {outline: 0;
+border: none;
+color: #1aa;
+background-color:antiquewhite;
+width: 80px;
+height: 80px;
+font-size: 30px;
+margin-bottom: 20px;
+margin-left: 15px;}
+
+#top_display {display: block;}
+#display {width: 375px;
+height: 100px;
+text-indent:10pt;
+}
+
+.inputRow {display: block;}
+
+.equals {display: block;
+width: 379px;
+	}
+[class=number]:hover {
+  background-color: #FF3366;}
+[class=operator]:hover {
+  background-color: #FF3366;}
+[class=clear]:hover {
+  background-color: #FF3366;}
+[class=equals]:hover {
+  background-color: #FF3366;}
+[class=decimal]:hover {
+  background-color: #FF3366;}
+[class=display]:hover {
+  background-color: #FF3366;}
