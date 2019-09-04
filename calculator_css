@@ -14,7 +14,7 @@ margin-left: 15px;}
 	background-color: cornflowerblue;
 	padding-bottom: 20px;
 	padding-left: 20px;
-	margin-right: 65%;
+	width: 425px;
 	border-bottom-left-radius: 5%;
 	border-bottom-right-radius: 5%;
 	border-top-left-radius: 5%;
