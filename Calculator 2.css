@@ -1,0 +1,117 @@
+@charset "utf-8";
+input {
+border: none;
+color: white;
+width: 10px;
+height: 10px;
+font-family: "Roboto Thin";
+margin-bottom: 20px;
+margin-left: 15px;}
+
+Body {
+	background-color: #EEBE6F;
+
+	}
+#top_display {
+	background-position: center;
+	padding: 50px 10px 40px 25px;
+	margin: auto;
+	margin-top: -10px;
+	background-color: #E9C579;
+	width: 220px;
+	height: 320px;
+	
+
+
+}
+#display {display: inline-block;
+	padding: 25px 50px 30px 50px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	width: 105px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #627F7F;
+	font-size: 23px;
+
+} 
+.inputRow {display: block;
+margin:auto;
+margin-bottom: -15px;
+margin-left: -5px;
+width: 260px;
+
+}
+.number {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #627F7F;
+font-size: 20px;}
+.visual {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #627F7F;
+font-size: 20px;}
+.operator {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #627F7F;
+font-size: 18px;}
+.operatorleft {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #C8802A;
+font-size: 20px;	
+}
+.operatorvisual {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #C8802A;
+font-size: 20px;	
+}
+.c {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #C8802A;
+font-size: 18px; }
+.clear {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #C8802A;
+font-size: 15px;}
+.decimal {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right:-10px;
+background-color: #627F7F;
+font-size: 18px;}
+.equals {border-radius: 50%;
+width: 30px;
+height: 30px;
+margin-right: -10px;
+background-color: #627F7F;
+font-size: 18px;}
+[class=number]:hover {
+  background-color: #E9C579;}
+[class=operator]:hover {
+  background-color: #E9C579;}
+[class=clear]:hover {
+  background-color: #E9C579;}
+[class=equals]:hover {
+  background-color: #E9C579;}
+[class=decimal]:hover {
+  background-color: #E9C579;}
+[class=c]:hover {
+  background-color: #E9C579;}
+[class=operatorleft]:hover {
+  background-color: #E9C579;}

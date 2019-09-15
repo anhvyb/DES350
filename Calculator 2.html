@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DES350</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<!-- Google Fonts Embed (Source Sans Pro example): -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<!-- Embed Social Media Icons (from http://fontawesome.io/icons/): -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="Calculator 2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section class="container">
+<form name= "calculator">
+	
+<div id="myCalculator">
+<div id="top_display">
+<input type="text" class="display" name="display" id="display" disabled>
+<div class="inputRow">	
+<input type="button" class="operator" name="add" value="+" onclick="calculator.display.value+='+'">
+<input type="button" class="number" name="seven" value="7" onclick="calculator.display.value +='7'">	
+<input type="button" class="number" name="eight" value="8" onclick="calculator.display.value +='8'">	
+<input type="button" class="number" name="nine" value="9" onclick="calculator.display.value +='9'">
+<input type="button" class="operatorvisual" name="proportion" value=" " onClick=" ">
+</div>
+<div class="inputRow">	
+<input type="button" class="operator" name="minus" value="&minus;" onclick="calculator.display.value+='-'">
+<input type="button" class="number" name="four" value="4" onclick="calculator.display.value +='4'">	
+<input type="button" class="number" name="five" value="5" onclick="calculator.display.value +='5'">	
+<input type="button" class="number" name="six" value="6" onclick="calculator.display.value +='6'">	
+
+<input type="button" class="c" name="decimal" value="." onclick="calculator.display.value+='.'">
+
+</div>
+
+	
+<div class="inputRow">
+<input type="button" class="operator" name="multiple" value="&times;" onclick="calculator.display.value+='x'">
+<input type="button" class="number" name="one" value="1" onclick="calculator.display.value +='1'">	
+<input type="button" class="number" name="two" value="2" onclick="calculator.display.value+='2'">
+<input type="button" class="number" name="three" value="3" onclick="calculator.display.value+='3'">
+<input type="button" class="operatorleft" name="equals" value="=" onclick="calculator.display.value=eval(calculator.display.value)"></div>
+<div class="inputRow">
+<input type="button" class="operator" name="divide" value="÷" onclick="calculator.display.value+='/'">
+<input type="button" class="visual" name="zero" value=" " onclick=" ">	
+<input type="button" class="decimal" name="decimal" value="0" onclick="calculator.display.value +='0'">
+<input type="button" class="visual" name="equals" value=" " onclick=" ">
+<input type="button" class="clear" name="clear" value="CE" onclick="calculator.display.value = ''">
+</div>
+
+</div>
+</div>
+</form>
+</section>
+</body>
+</html>
