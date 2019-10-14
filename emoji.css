@@ -281,8 +281,8 @@ position: absolute;
 }
 #triangledown {
 	transform: rotate(0deg) skewX(-30deg) scale(1,.866);
-	top: 170px;
-	left: 177px;
+	top: 178px;
+	left: 185px;
 	background: #7F3C1C;
 }
 #triangledown:before {
