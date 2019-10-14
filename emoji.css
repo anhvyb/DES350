@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+#triangleup1 {
+	position: relative;
+	background-color: orange;
+	text-align: left;
+}
+#triangleup1:before,
+#triangleup1:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+#triangleup1,
+#triangleup1:before,
+#triangleup1:after {
+	width:  50px;
+	height: 50px;
+	border-top-right-radius: 30%;
+	
+}
+
+#triangleup1 {
+	transform: rotate(30deg) skewX(-30deg) scale(1,.866);
+	top: 75px;
+	left: 75px;
+	background: #BA8F59;
+}
+#triangleup1:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+#triangleup1:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
+
+#triangleup1a {
+	position: relative;
+	background-color: orange;
+	text-align: left;
+}
+#triangleup1a:before,
+#triangleup1a:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+#triangleup1a,
+#triangleup1a:before,
+#triangleup1a:after {
+	width:  10px;
+	height: 10px;
+	border-top-right-radius: 40%;
+	z-index: 6;
+}
+
+#triangleup1a {
+	transform: rotate(30deg) skewX(-30deg) scale(1,.866);
+	top: 40px;
+	left: 80px;
+	background: #8C6637;
+}
+#triangleup1a:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+#triangleup1a:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
+
+#triangleup2 {
+	position: relative;
+	background-color: orange;
+	text-align: left;
+}
+#triangleup2:before,
+#triangleup2:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+#triangleup2,
+#triangleup2:before,
+#triangleup2:after {
+	width:  50px;
+	height: 50px;
+	border-top-right-radius: 30%;
+	
+}
+#triangleup2 {
+	transform: rotate(-150deg) skewX(-30deg) scale(1,.866);
+	top: 15px;
+	left: 240px;
+	background: #BA8F59;
+}
+#triangleup2:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+#triangleup2:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
+
+#triangleup2a {
+	position: relative;
+	text-align: left;
+}
+#triangleup2a:before,
+#triangleup2a:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+#triangleup2a,
+#triangleup2a:before,
+#triangleup2a:after {
+	width:  10px;
+	height: 10px;
+	border-top-right-radius: 40%;
+	
+}
+#triangleup2a {
+	transform: rotate(210deg) skewX(-30deg) scale(1,.866);
+	top: -20px;
+	left: 275px;
+	background: #8C6637;
+	z-index: 6;
+}
+#triangleup2a:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+#triangleup2a:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
+ #oval2 {
+      width: 260px;
+      height: 130px;
+      background: #BA8F59;
+      border-radius: 200px / 100px;
+		position: absolute;
+		top: 80px;
+		left: 60px;
+	
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+    }
+#cicrle1{ background: #BA8F59;
+	width: 200px;
+      height: 180px;
+      border-radius: 60%;
+position: absolute;
+		top: 120px;
+		left: 150px;
+	z-index: 4;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval3 {background: #BA8F59;
+	width: 200px;
+      height: 180px;
+      border-radius: 60%;
+		position: absolute;
+		top: 120px;
+		left: 30px;
+	z-index: 4;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval4{background: #BA8F59;
+	width: 200px;
+      height: 100px;
+      border-radius: 200px/100px;
+	transform: rotate(45deg);
+		position: absolute;
+		top: 218px;
+		left: 8px;
+	
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval1 {
+	width: 200px;
+      height: 98px;
+      background: #BA8F59;
+      border-radius: 200px/100px;
+	transform: rotate(135deg);
+		position: absolute;
+		top: 222px;
+		left: 170px;
+	
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval5 {width: 200px;
+      height: 100px;
+      background: #E0C289;
+      border-radius: 200px/100px;
+		position: absolute;
+		top: 248px;
+		left: 50px;
+	transform: rotate(20deg);
+	z-index: 3;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval6 {width: 220px;
+      height: 80px;
+      background: #E0C289;
+      border-radius: 220px / 80px;
+	transform: rotate(90deg);
+		position: absolute;
+		top: 190px;
+		left: 80px;
+	z-index: 4;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval7{width: 200px;
+      height: 100px;
+      background: #E0C289;
+      border-radius: 200px/100px;
+		position: absolute;
+		top: 248px;
+		left: 130px;
+	transform: rotate(160deg);
+	z-index: 3;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval8{width: 60px;
+      height: 50px;
+      background: #F2CF97;
+      border-radius: 60px / 50px;
+	transform: rotate(20deg);
+		position: absolute;
+		top: 305px;
+		left: 135px;
+	z-index: 5;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#oval9{width: 60px;
+      height: 50px;
+      background: #F2CF97;
+      border-radius: 60px / 50px;
+	transform: rotate(160deg);
+		position: absolute;
+		top: 305px;
+		left: 185px;
+	z-index: 5;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+#triangledown {
+	position: relative;
+	background-color: #7F3C1C;
+	text-align: left;
+	z-index: 4;
+}
+#triangledown:before,
+#triangledown:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+#triangledown,
+#triangledown:before,
+#triangledown:after {
+	width:  20px;
+	height: 20px;
+	border-top-right-radius: 20%;
+	
+}
+#triangledown {
+	transform: rotate(0deg) skewX(-30deg) scale(1,.866);
+	top: 170px;
+	left: 177px;
+	background: #7F3C1C;
+}
+#triangledown:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+#triangleudown:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);}
+#circle2 {background: #7F3C1C;
+	width: 30px;
+      height: 20px;
+      border-radius: 60%;
+position: absolute;
+		top: 340px;
+		left: 175px;
+	z-index: 4;
+	animation-name: example;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;}
+.ovaleye1 {width: 55px;
+      height: 45px;
+      background: #4B2614;
+      border-radius: 55px / 45px;
+	transform: rotate(30deg);
+		position: absolute;
+		top:200px;
+		left: 95px;
+	z-index: 6;	}
+
+
+.ovaleye2{width: 47px;
+      height: 35px;
+      background: #866429;
+      border-radius: 47px / 35px;
+	transform: rotate(35deg);
+		position: absolute;
+		top:205px;
+		left:100px;
+	z-index: 8;}
+.ovaleye3{width: 30px;
+      height: 15px;
+      background: #000000;
+      border-radius: 30px / 15px;
+	transform: rotate(90deg);
+		position: absolute;
+		top:213px;
+		left:110px;
+	z-index: 8;	
+	animation-name: leftEye;
+  	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+	
+@-webkit-keyframes leftEye {
+	0%   {left: 110px}
+	10%  {left: 105px}
+	12%  {left: 105px}
+	15%  {left: 113px}
+	25%  {left: 113px}
+	100% {left: 110px}
+}
+.ovaleye1a {width: 55px;
+      height: 45px;
+      background: #4B2614;
+      border-radius: 55px / 45px;
+	transform: rotate(150deg);
+		position: absolute;
+		top:205px;
+		left: 230px;
+	z-index: 6;}
+
+.ovaleye2a{width: 47px;
+      height: 35px;
+      background: #866429;
+      border-radius: 47px / 37px;
+	transform: rotate(150deg);
+		position: absolute;
+top:210px;
+		left: 237px;
+	z-index: 6;
+}
+.ovaleye3a{width: 30px;
+      height: 15px;
+      background: #000000;
+      border-radius: 30px / 15px;
+	transform: rotate(90deg);
+		position: absolute;
+		top: 217px;
+		left: 245px;
+	z-index: 6;
+		animation-name: rightEye;
+  	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}	
+	
+	@-webkit-keyframes rightEye {
+	0%   {left: 245px}
+	10%  {left: 240px}
+	12%  {left: 240px}
+	15%  {left: 248px}
+	25%  {left: 248px}
+	100% {left: 245px}
+}
