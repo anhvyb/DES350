@@ -128,3 +128,40 @@ h1:hover {
 a:hover {
   background-color: gray;
 padding: 5px 5px 5px 5px;}
+.Aboutme1 {margin-top: 800px;
+font-size: 28px;
+	text-align: right;
+	width: 130px;
+	height: 390px;
+  line-height: 40px;
+	border-bottom: 6px solid white;
+	border-left: 6px solid white;
+	border-top: 6px solid white;
+	padding-top: 7px;
+	border-right: 6px solid white;
+	padding-right: 10px;}
+.firstname {font-size: 51px;
+line-height: 65px;}
+.lastname {font-size: 61px;
+line-height: 75px;
+border-bottom: 36px solid white;
+padding-bottom: 8px;
+
+}
+.AM1 {color: gray;
+font-size: 23px;
+text-aligh: left;
+
+}
+.AM2 {font-size: 75px;
+line-height: 70px;}
+.Aboutme2 {font-size: 20px;
+  color: black;
+padding-left: 50px;
+ padding-right: 50px;
+  padding-top: 50px;
+height: 390px;
+width: 50%;
+margin-left: 18%;
+margin-top: -600px;
+background-color: gray;}
