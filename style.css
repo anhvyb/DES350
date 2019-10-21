@@ -1,3 +1,4 @@
+@charset "utf-8";
 body{
 	font-family: Helvetica, Arial, sans-serif;
 	background-color: black;
@@ -26,29 +27,7 @@ h2{font-size: 22px;
 	text-align: right;
 	width: 140px;
 margin-top: 5px;}
-h3{
-			font-size:25px;
-			color:white;
-			width: 200px;
-			height: 0px;
-			padding: 0px 0 0 30px;
-			float: left;
-			
-		}
-		h4{
-			font-size: 70px;
-			margin: 120px 0 20px 10%;
-			display: block;
-			width: 450px;
-			border-bottom: 3px solid white;
-      
-		}
-		h5{
-			color:white;
-			font-size:55px;
-			margin-top: -10px
-		}
-		
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -165,9 +144,9 @@ width: 50%;
 margin-left: 18%;
 margin-top: -600px;
 background-color: gray;}
-
 @media (max-width: 1060px ){
-  .row {
+
+.row {
   display: flex;
   flex-wrap: wrap;
 
@@ -282,8 +261,7 @@ text-aligh: left;
 }
 .AM2 {font-size: 65px;
 line-height: 60px;}
-.Aboutme2 {font-size: 13px;
-  text-position: center;
+.Aboutme2 {font-size: 20px;
   color: black;
 padding-left: 50px;
  padding-right: 50px;
@@ -293,4 +271,5 @@ width: 50%;
 margin-left: 38%;
 margin-top: -400px;
 background-color: gray;}
+  
 }
