@@ -165,3 +165,132 @@ width: 50%;
 margin-left: 18%;
 margin-top: -600px;
 background-color: gray;}
+
+@media (max-width: 1060px ){
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.column {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+	align-content: flex-end;
+	margin-top: 0px;
+	flex: 25%;
+	max-width: 55%;
+	margin-left: 0%;
+	text-align: center;
+  vertical-align: top;
+  padding-bottom: 10px;
+  line-height: 25px;
+
+}
+.topic5{background-color: gray;
+	  margin-bottom: 60px;
+
+
+}
+.topic4{background-color: gray;
+  margin-bottom: 60px;
+}
+.topic3{background-color: gray;
+margin-bottom: 60px;
+}
+.topic2{background-color: gray;
+margin-bottom: 60px;
+}
+.topic1{background-color: gray;
+margin-bottom: 60px;
+width: 150px;
+
+}
+.column1 {
+  font-weight: light;
+  font-size: 20px;
+margin-left: 10%;
+  vertical-align: top;
+  flex: 25%;
+  max-width: 45%;
+}
+.content5{
+  margin-top: 20px;
+margin-left: -35%;
+}
+.content4{
+  margin-top: 60px;
+	width: 300px;
+	margin-left: 0%;
+}
+.content3{
+margin-left: -30%;
+  margin-top: 20px;
+	width: 400px;
+
+}
+.content2{
+width: 400px;
+  margin-top: 15px;
+margin-lefT: -30%;
+}
+.content1{
+  margin-top: 5px;
+margin-lefT: -30%;
+width: 350px;
+
+
+}
+nav h1 a {width: 50%;
+	padding: 5px 5px;
+	text-decoration: none;
+	color: white;}  
+.gray {
+color: gray;}
+a {color: white;
+  text-decoration: none;
+}
+h1:hover {
+  background-color: gray;}
+a:hover {
+  background-color: gray;
+padding: 5px 5px 5px 5px;}
+.Aboutme1 {margin-top: 200px;
+font-size: 18px;
+	text-align: right;
+	width: 130px;
+	height: 320px;
+  line-height: 30px;
+	border-bottom: 6px solid white;
+	border-left: 6px solid white;
+	border-top: 6px solid white;
+	padding-top: 7px;
+	border-right: 6px solid white;
+	padding-right: 10px;}
+.firstname {font-size: 31px;
+line-height: 55px;}
+.lastname {font-size: 41px;
+line-height: 65px;
+border-bottom: 26px solid white;
+padding-bottom: 4px;
+
+}
+.AM1 {color: gray;
+font-size: 15px;
+text-aligh: left;
+
+}
+.AM2 {font-size: 65px;
+line-height: 60px;}
+.Aboutme2 {font-size: 13px;
+  text-position: center;
+  color: black;
+padding-left: 50px;
+ padding-right: 50px;
+  padding-top: 50px;
+height: 390px;
+width: 50%;
+margin-left: 38%;
+margin-top: -400px;
+background-color: gray;}
+}
