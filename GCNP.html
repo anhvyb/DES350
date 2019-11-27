@@ -1,0 +1,658 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Park Site</title>
+</head>
+	
+<style>
+	
+body{
+	height: 100%;
+	background: #341f1c;
+	background-repeat: no-repeat;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	line-height: 1.4em;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+	padding: 0px;}	
+	
+.background{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	left:0;
+	height: 100%}	
+	
+	.transition{position: absolute;
+	z-index: 5;
+	left:0px; 
+	width:100%; 
+	top:0}
+	
+	.foreground{position: absolute;
+	z-index: 10;
+	left: 0px;
+	width:100%;
+	margin-top: 2%
+	}
+	
+	.midground{position: absolute;
+	z-index: 6;
+	left: 0px;
+	width: 100%}
+	
+
+	.visit{position: absolute;
+	z-index: 12;
+	font-size: 5.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 1300px;
+	left: 10%}	
+	
+	.name{position: absolute;
+	z-index: 12;
+	font-size: 3.2vw;
+	color: black;
+	font-weight: bolder;
+	top: 190px;
+	left: 25%;
+}	
+	
+	.park{position: absolute;
+	z-index: 12;
+	font-size: 2.8vw;
+	color: black;
+	font-weight:bolder;
+	top: 330px;
+	left: 36%}	
+		
+	.dots{
+	position: absolute;
+	z-index: 12;
+    border-left: 3px dotted white;
+	height: 12vh;
+	left:16%;
+	top: 1350px} 
+	
+	
+	.story{
+	position: absolute;
+	z-index: 12;
+	font-size: 6.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 1580px;
+	right: 2%;
+	writing-mode: vertical-lr;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 180px 40px 20px 60px;
+}
+
+	.icon_1{
+		position: absolute;
+		z-index:12;
+		margin-left: 52%;
+		margin-top: 1550px;
+		width: 25%;}
+	.icon_2{
+		position: absolute;
+		z-index:12;
+		margin-left: 2%;
+		margin-top: 1200px;
+		width: 30%;}
+
+	.intro{position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 1130px;
+	left: 35%;
+	width: 50%;}
+	.introtoo{position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 1500px;
+	left: 5%;
+	width: 40%;
+	text-align: right;}
+	.numbers{
+	position: absolute;
+	z-index: 12;
+	font-size: 5.2vw;
+	color: white;
+	font-weight: lighter;
+	top: 1980px;
+	left: 2%;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 100px 20px 40px 180px;
+}
+.numbers_typing{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 2150px;
+	left: 45%;
+	width: 40%;
+
+}
+.activities_typing_a{
+	position: absolute;
+	z-index: 12;
+	color: white;
+	font-size: 5.6vw;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 2250px;
+	left: 15%;
+	width: 40%;
+
+}
+.activies_typing_b{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 35px;
+	top: 2650px;
+	left: 45%;
+	width: 40%;
+
+}
+.still_poster {
+	position: absolute;
+	z-index: 12;
+	top: 4150px;
+	left: 5%;
+}
+.sister_parks {
+	position: absolute;
+	z-index: 12;
+	top: 3100px;
+	left: 38%;
+	width: 50%;
+	line-height: 44px;
+
+
+
+
+
+}
+.sister_parks h2{
+	font-size: 5.6vw;
+	font-weight: lighter;
+	color: white;
+	line-height: 1px;
+
+
+
+}
+.sister_parks h3{
+	font-size: 2.6vw;
+	font-weight: lighter;
+	color: white;
+	margin-left: 60%;
+	max-width: 30%;
+	margin-top: -20px;}
+
+.sister_parks_border {
+	position: absolute;
+	z-index: 12;
+	top: 3550px;
+	left: 35%;
+	width: 55%;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 480px 50px 280px 50px;
+}
+
+.sister_parks_poster_1 {
+	position: absolute;
+	z-index: 12;
+	top: 3100px;
+	left: 40%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_2 {
+	position: absolute;
+	z-index: 12;
+	top: 3100px;
+	left: 60%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_3 {
+	position: absolute;
+	z-index: 12;
+	top: 3100px;
+	left: 80%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.unesco {
+	position: absolute;
+	z-index: 12;
+	top: 5500px;
+	left: 2%;
+	color: white;
+
+}
+.nounproject{
+	position: absolute;
+	z-index: 12;
+	top: 5580px;
+	left: 2%;
+	color: white;
+}
+
+.footer {
+	position: absolute;
+	z-index: 12;	
+	background-size: 100%;
+	background-color: black;
+
+}
+
+@media (max-width: 680px ){
+	.visit{
+	position: absolute;
+	z-index: 12;
+	font-size: 5.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 550px;
+	left: 10%}	
+	
+	.name{
+	position: absolute;
+	z-index: 12;
+	font-size: 20px;
+	color: black;
+	font-weight: bolder;
+	top: 90px;
+	left: 15%;
+	max-width: 80%;
+	}	
+	
+	.park{position: absolute;
+	z-index: 12;
+	font-size: 20px;
+	color: black;
+	font-weight:bolder;
+	top: 170px;
+	left: 32%}	
+
+	.dots{
+	position: absolute;
+	z-index: 12;
+    border-left: 3px dotted white;
+	height: 12vh;
+	left:16%;
+	top: 600px}
+
+	.story{
+	position: absolute;
+	z-index: 12;
+	font-size: 8.0vw;
+	color: white;
+	font-weight:lighter;
+	top: 1200px;
+	right: 2%;
+	writing-mode: vertical-lr;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 160px 40px 10px 25px;
+}
+
+	.icon_1{
+		position: absolute;
+		z-index:12;
+		margin-left: 12%;
+		margin-top: 1220px;
+		width: 50%;}
+	.icon_2{
+		position: absolute;
+		z-index:12;
+		margin-left: 45%;
+		margin-top: 920px;
+		width: 60%;}
+
+	.intro{position: absolute;
+	z-index: 12;
+	font-size: 2.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	top: 700px;
+	left: 15%;
+	width: 65%;}
+	.introtoo{position: absolute;
+	z-index: 12;
+	font-size: 2.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	top: 950px;
+	left: 5%;
+	width: 40%;
+	text-align: right;}
+
+	.numbers{
+	position: absolute;
+	z-index: 12;
+	font-size: 8.2vw;
+	color: white;
+	font-weight: lighter;
+	top: 1680px;
+	left: 2%;
+	writing-mode: vertical-lr;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 100px 50px 20px 20px;
+}
+.numbers_typing{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 1800px;
+	left: 35%;
+	width: 22%;
+
+}
+.activities_typing_a{
+	display: inline-block;
+	z-index: 12;
+	color: white;
+	font-size: 8.6vw;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 1950px;
+	left: 24%;
+	width: 70%;
+
+}
+.activies_typing_b{
+	position: absolute;
+	z-index: 12;
+	font-size: 3.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 35px;
+	top: 2350px;
+	left: 35%;
+	width: 40%;
+
+}
+.still_poster {
+	position: absolute;
+	z-index: 12;
+	top: 5350px;
+	left: 15%;
+}
+.sister_parks {
+	position: absolute;
+	z-index: 12;
+	top: 2700px;
+	left: 38%;
+	width: 70%;
+	line-height: 44px;
+
+
+
+
+
+
+}
+.sister_parks h2{
+	font-size: 8.6vw;
+	font-weight: lighter;
+	color: white;
+	line-height: 29px;
+	width: 40%;
+	margin-left: 30%;
+	writing-mode: vertical-rl;
+
+
+
+
+}
+.sister_parks h3{
+	font-size: 4.6vw;
+	font-weight: lighter;
+	color: white;
+	margin-left: 55%;
+	max-width: 30%;
+	margin-top: 30px;
+	writing-mode: vertical-rl;
+	line-height: 25px;
+
+}
+
+.sister_parks_border {
+	position: absolute;
+	z-index: 12;
+	top: 3600px;
+	left: 5%;
+	width: 65%;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 1700px 50px 80px 50px;
+}
+
+.sister_parks_poster_1 {
+	position: absolute;
+	z-index: 12;
+	top: 2750px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_2 {
+	position: absolute;
+	z-index: 12;
+	top: 3150px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_3 {
+	position: absolute;
+	z-index: 12;
+	top: 3550px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.unesco {
+	position: absolute;
+	z-index: 12;
+	top: 6900px;
+	left: 2%;
+	color: white;
+	line-height: 5px;
+
+}
+.nounproject{
+	position: absolute;
+	z-index: 12;
+	top: 6950px;
+	left: 2%;
+	color: white;
+}
+
+.footer {
+	position: absolute;
+	z-index: 12;	
+	background-size: 100%;
+	background-color: black;
+
+}
+}
+@media (max-width: 1060px ){
+
+
+
+</style>
+	
+	
+	
+	
+	
+	
+	
+<body>
+	
+<div class="midground rellax" data-rellax-speed="1"><img src="park mountain midground.svg" alt=""/></div>
+	
+<div class="foreground rellax" data-rellax-speed="4"><img src="park mountain foreground.svg" alt=""/></div>
+	
+<div class="transition rellax" data-rellax-speed="1"><img src="park mountain transition.svg" alt=""/></div>
+	
+<div class="background rellax" data-rellax-speed=""><img src="park mountain background.svg" alt=""/></div>
+	  
+
+	
+		
+	
+<div class="bottom_background rellax" data-rellax-speed="3"></div>
+	
+<div class="visit rellax" data-rellax-speed="1">visit</div>
+<div class="dots rellax" data-rellax-speed="1"></div>
+	  
+  <div class="name rellax" data-rellax-speed="-4.3"><h1>GRAND CANYON</h1></div>	
+	
+  <div class="park rellax" data-rellax-speed="-4">NATIONAL PARK</div>	
+	
+		
+	
+
+
+
+
+
+<div class="icon_1 rellax" data-rellax-speed="-4.3"><img src="icon 1.svg" alt=""/></div>
+<div class="icon_2 rellax" data-rellax-speed="-4.3"><img src="icon 2.svg" alt=""/></div>
+<div class="story rellax" data-rellax-speed="-4">story</div>
+<div class="intro rellax" data-rellax-speed="-4.3">Grand Canyon is celebrated for its plunging depths; temple-like buttes; and vast, multihued, labyrinthine topography. Scenic wonders within park boundaries include high plateaus, plains, deserts, forests, cinder cones, lava flows, streams, waterfalls, and one of America’s great whitewater rivers.</div>
+<div class="introtoo rellax" data-rellax-speed="-4.3">An ecological refuge with relatively undisturbed remnants of dwindling ecosystems (such as boreal forest and desert riparian communities), and numerous endemic, rare or endangered plant and animal species.</div>
+
+<div class="numbers rellax" data-rellax-speed="-4">numbers</div>
+<div class="numbers_typing rellax" data-rellax-speed="-4.3">
+ <p>
+    <font size="26">-112.125092</font> W : the degree of longtitude
+  </p>
+  <p>
+    <font size="26">36.056595</font> N : the degree of latitude
+  </p>
+  <p>
+    <font size="20">1,902</font> mi² : the total square mileage
+  </p>
+  <p><font size="26">1919</font> : the established year</p></div>
+<div class="activities_typing_a rellax" data-rellax-speed="-3.6">
+	5 : <font size="16">things to do</font>
+ </div>
+<div class="activies_typing_b rellax" data-rellax-speed="-3.8">
+  <p>Mule riding</p>
+  <p>Rafting trip</p>
+  <p>Hiking</p>
+  <p>Camping</p>
+  <p>Biking</p>
+</div>
+
+<div class="still_poster rellax" data-rellax-speed=""><img src="posterRRRb_1.jpg" alt="" width="300" height="450"/></div>
+<div class="sister_parks rellax" data-rellax-speed="-4"><h2>sister parks</h2></div>
+<div class="sister_parks rellax" data-rellax-speed="-4"><h3>around<br>the corner</h3></div>
+<div class="sister_parks_border rellax" data-rellax-speed="-4"></div>
+<div class="sister_parks_poster_1 rellax" data-rellax-speed="-4">
+	
+<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script></div>
+	
+	
+<div class="sister_parks_poster_2 rellax" data-rellax-speed="-4">
+		
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://kdirnb2.github.io/DES350/newposter.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://tmfriese.github.io/DES350/Comp-1_4.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script></div>
+	
+
+<div class="sister_parks_poster_3 rellax" data-rellax-speed="-4">
+		
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="page1.html"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>';
+random_img[1] = '<a href="page2.html"><img src="https://gira006.github.io/DES350/poster_animation.gif" width="100%"></a>';
+random_img[2] = '<a href="page3.html"><img src="https://anhvyb.github.io/DES350/posterRRRb%203_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script></div>
+
+
+	   <!-- javascript by Dixon and Moe: https://dixonandmoe.com/rellax/ -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+  <footer>
+    <div class="unesco rellax" data-rellax-speed="-5">
+    <p>© UNESCO World Heritage Centre 1992-2019</p>
+    <p>Visit: www.nps.gov/grca/index.htm</p></div>
+    <div class="nounproject rellax" data-rellax-speed="-5"><p>Icons created by azapron,<br>Nithinan Tatah by the Nount Project</p></div>
+  </footer>	
+	
+</body>
+</html>
