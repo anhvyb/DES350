@@ -88,7 +88,7 @@ body{
 	font-size: 6.2vw;
 	color: white;
 	font-weight:lighter;
-	top: 1580px;
+	top: 1700px;
 	right: 2%;
 	writing-mode: vertical-lr;
 	border-bottom: 2px solid white;
@@ -102,13 +102,13 @@ body{
 		position: absolute;
 		z-index:12;
 		margin-left: 52%;
-		margin-top: 1550px;
+		margin-top: 1750px;
 		width: 25%;}
 	.icon_2{
 		position: absolute;
 		z-index:12;
 		margin-left: 2%;
-		margin-top: 1200px;
+		margin-top: 1400px;
 		width: 30%;}
 
 	.intro{position: absolute;
@@ -117,7 +117,7 @@ body{
 	color: white;
 	font-weight: lighter;
 	line-height: 45px;
-	top: 1130px;
+	top: 1330px;
 	left: 35%;
 	width: 50%;}
 	.introtoo{position: absolute;
@@ -126,7 +126,7 @@ body{
 	color: white;
 	font-weight: lighter;
 	line-height: 45px;
-	top: 1500px;
+	top: 1700px;
 	left: 5%;
 	width: 40%;
 	text-align: right;}
@@ -163,7 +163,7 @@ body{
 	font-size: 5.6vw;
 	font-weight: lighter;
 	line-height: 45px;
-	top: 2850px;
+	top: 2950px;
 	left: 15%;
 	width: 40%;
 
@@ -186,10 +186,10 @@ body{
 	top: 3680px;
 	left: 5%;
 }
-.sister_parks {
+#sister_parks_container {
 	position: absolute;
 	z-index: 12;
-	top: 3850px;
+	top: 4850px;
 	left: 38%;
 	width: 50%;
 	line-height: 44px;
@@ -199,7 +199,7 @@ body{
 
 
 }
-.sister_parks h2{
+#sister_parks{
 	font-size: 5.6vw;
 	font-weight: lighter;
 	color: white;
@@ -208,7 +208,7 @@ body{
 
 
 }
-.sister_parks h3{
+#around_the_corner{
 	font-size: 2.6vw;
 	font-weight: lighter;
 	color: white;
@@ -255,6 +255,19 @@ body{
 	width:200px;
 	height:300px;
 }
+.b {
+  color: white;
+
+}
+.b:hover{
+	transform: scale(1.1);
+	background-color:#341f1c;
+	color: white;
+	border: 2px solid #F2C5A1;
+	padding: 10px 10px 10px 10px;
+
+		
+	}
 .unesco {
 	position: absolute;
 	z-index: 12;
@@ -427,44 +440,39 @@ body{
 	top: 4650px;
 	left: 8%;
 }
-.sister_parks {
+
+ .custom_size_1:hover   div[id^='sister_parks']:not(:hover) {
+     display: none;  
+ }
+.custom_size_2:hover   div[id^='around_the_corner']:not(:hover) {
+     display: none;  
+ }
+#sister_parks_container {
 	position: absolute;
 	z-index: 12;
-	top: 3100px;
-	left: 38%;
-	width: 70%;
-	line-height: 44px;
-
-
-
-
-
+	width: 60%;
+	top: 5250px;
+	left: 8%;
+	line-height: 20px;
 
 }
-.sister_parks h2{
-	font-size: 8.6vw;
+#sister_parks{
+	font-size: 9.6vw;
 	font-weight: lighter;
 	color: white;
-	line-height: 29px;
-	width: 40%;
-	margin-left: 30%;
-	writing-mode: vertical-rl;
-
 
 
 
 }
-.sister_parks h3{
-	font-size: 4.6vw;
+#around_the_corner{
+	font-size: 5.6vw;
 	font-weight: lighter;
 	color: white;
 	margin-left: 50%;
-	max-width: 30%;
-	margin-top: 450px;
-	writing-mode: vertical-rl;
-	line-height: 35px;
+	max-width: 50%;
+	margin-top: 20px;}
 
-}
+
 
 .sister_parks_border {
 	position: absolute;
@@ -499,24 +507,32 @@ body{
 .sister_parks_poster_3 {
 	position: absolute;
 	z-index: 12;
-	top: 6900px;
-	left: 2%;
-	color: white;
-	line-height: 5px;tion: absolute;
-	z-index: 12;
 	top: 3950px;
 	left: 20%;
 	background-color: #F2C5A1;
 	width:200px;
 	height:300px;
 }
+.b {
+  color: white;
+
+}
+.b:hover{
+	transform: scale(1.1);
+	background-color:#341f1c;
+	color: white;
+	border: 2px solid #F2C5A1;
+	padding: 3px 3px 3px 3px;
+
+		
+	}
 .unesco {
 	position: absolute;
 	z-index: 12;
 	top: 6000px;
 	left: 2%;
 	color: white;
-	line-height: 5px;
+	line-height: 10px;
 
 }
 .nounproject{
@@ -529,7 +545,7 @@ body{
 
 .footer {
 	position: absolute;
-	z-index: 12;	
+	z-index: 12;
 	background-color: black;
 
 }
@@ -559,8 +575,8 @@ body{
 	
 <div class="bottom_background rellax" data-rellax-speed="3"></div>
 	
-<div class="visit rellax" data-rellax-speed="1">visit</div>
-<div class="dots rellax" data-rellax-speed="1"></div>
+<div class="visit rellax" data-rellax-speed="0.5">visit</div>
+<div class="dots rellax" data-rellax-speed="0.5"></div>
 	  
   <div class="name rellax" data-rellax-speed="-4.3"><h1>GRAND CANYON</h1></div>	
 	
@@ -573,11 +589,11 @@ body{
 
 
 
-<div class="icon_1 rellax" data-rellax-speed="-4.3"><img src="icon 1.svg" alt=""/></div>
-<div class="icon_2 rellax" data-rellax-speed="-4.3"><img src="icon 2.svg" alt=""/></div>
-<div class="story rellax" data-rellax-speed="-4">story</div>
-<div class="intro rellax" data-rellax-speed="-4.3">Grand Canyon is celebrated for its plunging depths; temple-like buttes; and vast, multihued, labyrinthine topography. Scenic wonders within park boundaries include high plateaus, plains, deserts, forests, cinder cones, lava flows, streams, waterfalls, and one of America’s great whitewater rivers.</div>
-<div class="introtoo rellax" data-rellax-speed="-4.3">An ecological refuge with relatively undisturbed remnants of dwindling ecosystems (such as boreal forest and desert riparian communities), and numerous endemic, rare or endangered plant and animal species.</div>
+<div class="icon_1 rellax" data-rellax-speed="-4"><img src="icon 1.svg" alt=""/></div>
+<div class="icon_2 rellax" data-rellax-speed="-4"><img src="icon 2.svg" alt=""/></div>
+<div class="story rellax" data-rellax-speed="-3.8">story</div>
+<div class="intro rellax" data-rellax-speed="-4">Grand Canyon is celebrated for its plunging depths; temple-like buttes; and vast, multihued, labyrinthine topography. Scenic wonders within park boundaries include high plateaus, plains, deserts, forests, cinder cones, lava flows, streams, waterfalls, and one of America’s great whitewater rivers.</div>
+<div class="introtoo rellax" data-rellax-speed="-4">An ecological refuge with relatively undisturbed remnants of dwindling ecosystems (such as boreal forest and desert riparian communities), and numerous endemic, rare or endangered plant and animal species.</div>
 
 <div class="numbers rellax">numbers</div>
 <div class="numbers_typing rellax">
@@ -603,8 +619,9 @@ body{
 </div>
 
 <div class="still_poster rellax"><img src="posterRRRb_1.jpg" alt="" width="300" height="450"/></div>
-<div class="sister_parks rellax"><h2>sister parks</h2></div>
-<div class="sister_parks rellax"><h3>around<br>the corner</h3></div>
+<div id="sister_parks_container">
+<div id="sister_parks" class="custom_size_1">sister parks</div>
+<div id="around_the_corner" class="custom_size_2">around<br>the corner</div></div>
 <div class="sister_parks_border rellax"></div>
 <div class="sister_parks_poster_1 rellax">
 	
@@ -658,9 +675,9 @@ document.write(random_img[random_number]);
     </script>
   <footer>
     <div class="unesco">
-    <p>© UNESCO World Heritage Centre 1992-2019</p>
-    <p><a style="text-decoration:none" href="https://www.nps.gov/grca/index.htm">Visit: www.nps.gov/grca/index.html</a></p></div>
-    <div class="nounproject"><p>Icons created by azapron,<br>Nithinan Tatah by the Nount Project</p></div>
+    <p><a style="text-decoration:none" href="https://whc.unesco.org/en/list/75/" class="b">© UNESCO World Heritage Centre 1992-2019</a></p>
+    <p><a style="text-decoration:none" href="https://www.nps.gov/grca/index.htm" class="b">Visit: www.nps.gov/grca/index.html</a></p></div>
+    <div class="nounproject"><p>Icons created by azapron,<br>Nithinan Tatah by <a style="text-decoration:none" href="https://thenounproject.com/" class="b">the Nount Project</a></p></div>
   </footer>	
 	
 </body>
