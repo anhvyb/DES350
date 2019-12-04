@@ -1,0 +1,979 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Park Site</title>
+</head>
+	
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body{
+
+	background: #341f1c;
+	background-repeat: no-repeat;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	line-height: 1.4em;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-top: 0%;
+	padding: 0px;
+	overflow-x: hidden;}	
+	
+.background{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	left:0;
+	height: 100%}	
+	
+	.transition{position: absolute;
+	z-index: 5;
+	left:0px; 
+	width:100%; 
+	top:0}
+	
+	.foreground{position: absolute;
+	z-index: 10;
+	left: 0px;
+	width:100%;
+	margin-top: 2%
+	}
+	
+	.midground{position: absolute;
+	z-index: 6;
+	left: 0px;
+	width: 100%}
+	
+
+	.visit{position: absolute;
+	z-index: 12;
+	font-size: 5.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 1600px;
+	left: 10%}	
+	
+	.name{position: absolute;
+	z-index: 12;
+	font-size: 3.2vw;
+	color: white;
+	font-weight: bolder;
+	top: 190px;
+	left: 25%;
+}	
+	
+	.park{position: absolute;
+	z-index: 12;
+	font-size: 2.8vw;
+	color: white;
+	font-weight:bolder;
+	top: 330px;
+	left: 36%}	
+		
+	.dots{
+	position: absolute;
+	z-index: 12;
+    border-left: 3px dotted white;
+	height: 12vh;
+	left:16%;
+	top: 1450px} 
+	
+	
+	.story{
+	position: absolute;
+	z-index: 12;
+	font-size: 6.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 1700px;
+	right: 2%;
+	writing-mode: vertical-lr;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 180px 40px 20px 60px;
+}
+
+	.icon_1{
+		position: absolute;
+		z-index:12;
+		margin-left: 52%;
+		margin-top: 1750px;
+		width: 25%;}
+	.icon_2{
+		position: absolute;
+		z-index:12;
+		margin-left: 2%;
+		margin-top: 1400px;
+		width: 30%;}
+
+	.intro{position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 1330px;
+	left: 35%;
+	width: 50%;}
+	.introtoo{position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 1700px;
+	left: 5%;
+	width: 40%;
+	text-align: right;}
+	.numbers{
+	position: absolute;
+	z-index: 12;
+	font-size: 5.2vw;
+	color: white;
+	font-weight: lighter;
+	top: 2880px;
+	left: 2%;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 100px 20px 40px 180px;
+}
+.numbers_typing{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 3050px;
+	left: 45%;
+	width: 40%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .03em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.activities_typing_a{
+	position: absolute;
+	z-index: 12;
+	color: white;
+	font-size: 5.6vw;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 3250px;
+	left: 15%;
+	width: 40%;
+
+}
+.activies_typing_b{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 35px;
+	top: 3400px;
+	left: 45%;
+	width: 40%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .03em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end) infinite,
+    blink-caret .5s step-end infinite;
+
+}
+.still_poster {
+	position: absolute;
+	z-index: 12;
+	top: 4180px;
+	left: 5%;
+}
+#sister_parks_container {
+	position: absolute;
+	z-index: 12;
+	top: 5450px;
+	left: 38%;
+	width: 50%;
+	line-height: 44px;
+
+
+
+
+
+}
+#sister_parks{
+	font-size: 5.6vw;
+	font-weight: lighter;
+	color: white;
+	line-height: 1px;
+
+
+
+}
+#around_the_corner{
+	font-size: 2.6vw;
+	font-weight: lighter;
+	color: white;
+	margin-left: 60%;
+	max-width: 30%;
+	margin-top: -20px;}
+
+.sister_parks_border {
+	position: absolute;
+	z-index: 12;
+	top: 4250px;
+	left: 35%;
+	width: 55%;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 430px 50px 280px 50px;
+}
+	.b1{
+
+	}
+	.b1:hover{
+		transform: scale(1.1);
+		background-color: #F2C5A1;
+		color: #F2C5A1;
+		border-top: 300px solid #F2C5A1;
+		border-right: 8px solid #F2C5A1;
+		border-left: 8px solid #F2C5A1;
+		border-bottom: 4px solid #F2C5A1;
+
+
+	}
+.sister_parks_poster_1 {
+	position: absolute;
+	z-index: 12;
+	top: 4100px;
+	left: 38%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_2 {
+	position: absolute;
+	z-index: 12;
+	top: 4100px;
+	left: 59%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_3 {
+	position: absolute;
+	z-index: 12;
+	top: 4100px;
+	left: 80%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.b {
+  color: white;
+
+}
+.b:hover{
+	transform: scale(1.1);
+	background-color:#341f1c;
+	color: white;
+	border: 2px solid #F2C5A1;
+	padding: 10px 10px 10px 10px;
+
+		
+	}
+.unesco {
+	position: absolute;
+	z-index: 12;
+	top: 5530px;
+	left: 2%;
+	color: white;
+	text-decoration: none;
+
+}
+.nounproject{
+	position: absolute;
+	z-index: 12;
+	top: 5600px;
+	left: 2%;
+	color: white;
+}
+
+.footer {
+	position: absolute;
+	z-index: 12;	
+	background-size: 100%;
+	background-color: black;
+	text-decoration: none;
+
+
+}
+
+@media (max-width: 400px ){
+
+	.visit{
+	position: absolute;
+	z-index: 12;
+	font-size: 7.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 100px;
+	left: 10%}	
+	
+	.name{
+	position: absolute;
+	z-index: 12;
+	font-size: 20px;
+	color: white;
+	font-weight: bolder;
+	top: 60px;
+	left: 15%;
+	max-width: 80%;
+	line-height: 40px;
+	}	
+	
+	.park{position: absolute;
+	z-index: 12;
+	font-size: 20px;
+	color: white;
+	font-weight:bolder;
+	top: 170px;
+	left: 32%}	
+
+	.dots{
+	position: absolute;
+	z-index: 12;
+    border-left: 3px dotted white;
+	height: 12vh;
+	left:16%;
+	top: 350px}
+
+	.story{
+	position: absolute;
+	z-index: 12;
+	font-size: 8.0vw;
+	color: white;
+	font-weight:lighter;
+	top: 1200px;
+	right: 2%;
+	writing-mode: vertical-lr;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 160px 40px 10px 25px;
+}
+
+	.icon_1{
+		position: absolute;
+		z-index:12;
+		margin-left: 12%;
+		margin-top: 1180px;
+		width: 50%;}
+	.icon_2{
+		position: absolute;
+		z-index:12;
+		margin-left: 45%;
+		margin-top: 880px;
+		width: 60%;}
+
+	.intro{position: absolute;
+	z-index: 12;
+	font-size: 2.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	top: 700px;
+	left: 15%;
+	width: 65%;}
+	.introtoo{position: absolute;
+	z-index: 12;
+	font-size: 2.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	top: 950px;
+	left: 5%;
+	width: 40%;
+	text-align: right;}
+
+	.numbers{
+	position: absolute;
+	z-index: 12;
+	font-size: 8.2vw;
+	color: white;
+	font-weight: lighter;
+	top: 2080px;
+	left: 2%;
+	writing-mode: horizontal-tb;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 100px 40px 20px 20px;
+}
+.numbers_typing{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 2200px;
+	left: 30%;
+	width: 22%;
+
+}
+.activities_typing_a{
+	display: inline-block;
+	z-index: 12;
+	color: white;
+	font-size: 8.6vw;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 2500px;
+	left: 24%;
+	width: 70%;
+
+}
+.activies_typing_b{
+	position: absolute;
+	z-index: 12;
+	font-size: 3.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 35px;
+	top: 2700px;
+	left: 35%;
+	width: 40%;
+
+}
+.still_poster {
+	position: absolute;
+	z-index: 12;
+	top: 4650px;
+	left: 8%;
+}
+
+ .custom_size_1:hover   div[id^='sister_parks']:not(:hover) {
+     display: none;  
+ }
+.custom_size_2:hover   div[id^='around_the_corner']:not(:hover) {
+     display: none;  
+ }
+#sister_parks_container {
+	position: absolute;
+	z-index: 12;
+	width: 60%;
+	top: 5250px;
+	left: 8%;
+	line-height: 20px;
+
+}
+#sister_parks{
+	font-size: 9.6vw;
+	font-weight: lighter;
+	color: white;
+
+
+
+}
+#around_the_corner{
+	font-size: 5.6vw;
+	font-weight: lighter;
+	color: white;
+	margin-left: 50%;
+	max-width: 50%;
+	margin-top: 20px;}
+
+
+
+.sister_parks_border {
+	position: absolute;
+	z-index: 12;
+	top: 3400px;
+	left: 2%;
+	width: 65%;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 1450px 50px 80px 50px;
+}
+
+.sister_parks_poster_1 {
+	position: absolute;
+	z-index: 12;
+	top: 3150px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_2 {
+	position: absolute;
+	z-index: 12;
+	top: 3550px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_3 {
+	position: absolute;
+	z-index: 12;
+	top: 3950px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.b {
+  color: white;
+
+}
+.b:hover{
+	transform: scale(1.1);
+	background-color:#341f1c;
+	color: white;
+	border: 2px solid #F2C5A1;
+	padding: 3px 3px 3px 3px;
+
+		
+	}
+.unesco {
+	position: absolute;
+	z-index: 12;
+	top: 6000px;
+	left: 2%;
+	color: white;
+	line-height: 10px;
+
+}
+.nounproject{
+	position: absolute;
+	z-index: 12;
+	top: 6050px;
+	left: 2%;
+	color: white;
+}
+
+.footer {
+	position: absolute;
+	z-index: 12;
+	background-color: black;
+
+}
+}
+@media (max-width: 680px ){
+
+	.visit{
+	position: absolute;
+	z-index: 12;
+	font-size: 7.2vw;
+	color: white;
+	font-weight:lighter;
+	top: 550px;
+	left: 10%}	
+	
+	.name{
+	position: absolute;
+	z-index: 12;
+	font-size: 20px;
+	color: white;
+	font-weight: bolder;
+	top: 60px;
+	left: 15%;
+	max-width: 80%;
+	line-height: 40px;
+	}	
+	
+	.park{position: absolute;
+	z-index: 12;
+	font-size: 20px;
+	color: white;
+	font-weight:bolder;
+	top: 170px;
+	left: 32%}	
+
+	.dots{
+	position: absolute;
+	z-index: 12;
+    border-left: 3px dotted white;
+	height: 12vh;
+	left:16%;
+	top: 600px}
+
+	.story{
+	position: absolute;
+	z-index: 12;
+	font-size: 8.0vw;
+	color: white;
+	font-weight:lighter;
+	top: 1200px;
+	right: 2%;
+	writing-mode: vertical-lr;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 160px 40px 10px 25px;
+}
+
+	.icon_1{
+		position: absolute;
+		z-index:12;
+		margin-left: 12%;
+		margin-top: 1180px;
+		width: 50%;}
+	.icon_2{
+		position: absolute;
+		z-index:12;
+		margin-left: 45%;
+		margin-top: 880px;
+		width: 60%;}
+
+	.intro{position: absolute;
+	z-index: 12;
+	font-size: 2.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	top: 700px;
+	left: 15%;
+	width: 65%;}
+	.introtoo{position: absolute;
+	z-index: 12;
+	font-size: 2.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 25px;
+	top: 950px;
+	left: 5%;
+	width: 40%;
+	text-align: right;}
+
+	.numbers{
+	position: absolute;
+	z-index: 12;
+	font-size: 8.2vw;
+	color: white;
+	font-weight: lighter;
+	top: 1850px;
+	left: 2%;
+	writing-mode: horizontal-tb;
+	border-bottom: 2px solid white;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 40px 120px 20px 20px;
+}
+.numbers_typing{
+	position: absolute;
+	z-index: 12;
+	font-size: 1.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 2150px;
+	left: 5%;
+	width: 22%;
+
+}
+.activities_typing_a{
+	display: inline-block;
+	z-index: 12;
+	color: white;
+	font-size: 8.6vw;
+	font-weight: lighter;
+	line-height: 45px;
+	top: 2450px;
+	left: 6%;
+	width: 70%;
+
+}
+.activies_typing_b{
+	position: absolute;
+	z-index: 12;
+	font-size: 3.6vw;
+	color: white;
+	font-weight: lighter;
+	line-height: 35px;
+	top: 2700px;
+	left: 35%;
+	width: 40%;
+
+}
+.still_poster {
+	position: absolute;
+	z-index: 12;
+	top: 4650px;
+	left: 8%;
+}
+
+ .custom_size_1:hover   div[id^='sister_parks']:not(:hover) {
+     display: none;  
+ }
+.custom_size_2:hover   div[id^='around_the_corner']:not(:hover) {
+     display: none;  
+ }
+#sister_parks_container {
+	position: absolute;
+	z-index: 12;
+	width: 60%;
+	top: 5275px;
+	left: 8%;
+	line-height: 30px;
+
+}
+#sister_parks{
+	font-size: 9.6vw;
+	font-weight: lighter;
+	color: white;
+
+
+
+}
+#around_the_corner{
+	font-size: 5.6vw;
+	font-weight: lighter;
+	color: white;
+	margin-left: 50%;
+	max-width: 50%;
+	margin-top: 20px;}
+
+
+
+.sister_parks_border {
+	position: absolute;
+	z-index: 12;
+	top: 3400px;
+	left: 2%;
+	width: 65%;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #F2C5A1;
+	padding: 1500px 50px 80px 50px;
+}
+
+.sister_parks_poster_1 {
+	position: absolute;
+	z-index: 12;
+	top: 3150px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_2 {
+	position: absolute;
+	z-index: 12;
+	top: 3550px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.sister_parks_poster_3 {
+	position: absolute;
+	z-index: 12;
+	top: 3950px;
+	left: 20%;
+	background-color: #F2C5A1;
+	width:200px;
+	height:300px;
+}
+.b {
+  color: white;
+
+}
+.b:hover{
+	transform: scale(1.1);
+	background-color:#341f1c;
+	color: white;
+	border: 2px solid #F2C5A1;
+	padding: 3px 3px 3px 3px;
+
+		
+	}
+.unesco {
+	position: absolute;
+	z-index: 12;
+	top: 6000px;
+	left: 2%;
+	color: white;
+	line-height: 10px;
+
+}
+.nounproject{
+	position: absolute;
+	z-index: 12;
+	top: 6050px;
+	left: 2%;
+	color: white;
+}
+
+.footer {
+	position: absolute;
+	z-index: 12;
+	background-color: black;
+
+}
+}
+</style>
+	
+	
+	
+	
+	
+	
+	
+<body>
+	
+<div class="midground rellax" data-rellax-speed="1"><img src="park mountain midground.svg" alt=""/></div>
+	
+<div class="foreground rellax" data-rellax-speed="4"><img src="park mountain foreground.svg" alt=""/></div>
+	
+<div class="transition rellax" data-rellax-speed="1"><img src="park mountain transition.svg" alt=""/></div>
+	
+<div class="background rellax" data-rellax-speed=""><img src="park mountain background.svg" alt=""/></div>
+	  
+
+	
+		
+	
+<div class="bottom_background rellax" data-rellax-speed="3"></div>
+	
+<div class="visit rellax" data-rellax-speed="0.5">visit</div>
+<div class="dots rellax" data-rellax-speed="0.5"></div>
+	  
+  <div class="name rellax" data-rellax-speed="-4.3"><h1>GRAND CANYON</h1></div>	
+	
+  <div class="park rellax" data-rellax-speed="-4">NATIONAL PARK</div>	
+	
+		
+	
+
+
+
+
+
+<div class="icon_1 rellax" data-rellax-speed="-4"><img src="icon 1.svg" alt=""/></div>
+<div class="icon_2 rellax" data-rellax-speed="-4"><img src="icon 2.svg" alt=""/></div>
+<div class="story rellax" data-rellax-speed="-3.8">story</div>
+<div class="intro rellax" data-rellax-speed="-4">Grand Canyon is celebrated for its plunging depths; temple-like buttes; and vast, multihued, labyrinthine topography. Scenic wonders within park boundaries include high plateaus, plains, deserts, forests, cinder cones, lava flows, streams, waterfalls, and one of America’s great whitewater rivers.</div>
+<div class="introtoo rellax" data-rellax-speed="-4">An ecological refuge with relatively undisturbed remnants of dwindling ecosystems (such as boreal forest and desert riparian communities), and numerous endemic, rare or endangered plant and animal species.</div>
+
+<div class="numbers rellax">numbers</div>
+<div class="numbers_typing rellax">
+ <p>
+    <font size="26">-112.125092</font> W : the degree of longtitude
+  </p>
+  <p>
+    <font size="26">36.056595</font> N : the degree of latitude
+  </p>
+  <p>
+    <font size="20">1,902</font> mi² : the total square mileage
+  </p>
+  <p><font size="26">1919</font> : the established year</p></div>
+<div class="activities_typing_a rellax">
+	5 : <font size="16">things to do</font>
+ </div>
+<div class="activies_typing_b rellax">
+  <p>Mule riding</p>
+  <p>Rafting trip</p>
+  <p>Hiking</p>
+  <p>Camping</p>
+  <p>Biking</p>
+</div>
+
+<div class="still_poster rellax"><img src="posterRRRb_1.jpg" alt="" width="300" height="450"/></div>
+<div id="sister_parks_container">
+<div id="sister_parks" class="custom_size_1">sister parks</div>
+<div id="around_the_corner" class="custom_size_2">around<br>the corner</div></div>
+<div class="sister_parks_border rellax"></div>
+<div class="sister_parks_poster_1 rellax">
+	
+<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="https://www.nps.gov/yose/index.htm" class="b1"><img src="https://vweiss4.github.io/DES350/poster-2.gif" width="100%"></a>';
+random_img[1] = '<a href="https://www.nps.gov/grsm/index.htm" class="b1"><img src="https://avelaz36.github.io/DES350/np_poster.gif" width="100%"></a>';
+random_img[2] = '<a href="https://www.nps.gov/jotr/index.htm" class="b1"><img src="https://lpark25.github.io/DES350/Comp-1_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script></div>
+	
+	
+<div class="sister_parks_poster_2 rellax">
+		
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="https://www.nps.gov/yell/index.htm" class="b1"><img src="https://ahalam2.github.io/DES350/Yellowstone.gif" width="100%"></a>';
+random_img[1] = '<a href="https://www.nps.gov/grte/index.htm" class="b1"><img src="https://kdirnb2.github.io/DES350/newposter.gif" width="100%"></a>';
+random_img[2] = '<a href="https://www.nps.gov/dena/index.htm" class="b1"><img src="https://tmfriese.github.io/DES350/Comp-1_4.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script></div>
+	
+
+<div class="sister_parks_poster_3 rellax">
+		
+	<script type="text/javascript">
+var total_images = 3;
+var random_number = Math.floor((Math.random()*total_images));
+var random_img = new Array();
+random_img[0] = '<a href="https://www.nps.gov/glac/index.htm" class="b1"><img src="https://donteking.github.io/DES350/AnimatedPoster.gif" width="100%"></a>';
+random_img[1] = '<a href="https://www.nps.gov/badl/index.htm" class="b1"><img src="https://gira006.github.io/DES350/poster_animation.gif" width="100%"></a>';
+random_img[2] = '<a href="https://www.nps.gov/grca/index.htm" class="b1"><img src="https://anhvyb.github.io/DES350/posterRRRb%203_1.gif" width="100%"></a>';
+document.write(random_img[random_number]);
+</script></div>
+
+
+	   <!-- javascript by Dixon and Moe: https://dixonandmoe.com/rellax/ -->
+  <script type="text/javascript" src="rellax.js"></script>
+  <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+  <footer>
+    <div class="unesco">
+    <p><a style="text-decoration:none" href="https://whc.unesco.org/en/list/75/" class="b">© UNESCO World Heritage Centre 1992-2019</a></p>
+    <p><a style="text-decoration:none" href="https://www.nps.gov/grca/index.htm" class="b">Visit: www.nps.gov/grca/index.html</a></p></div>
+    <div class="nounproject"><p>Icons created by azapron,<br>Nithinan Tatah by <a style="text-decoration:none" href="https://thenounproject.com/" class="b">the Nount Project</a></p></div>
+  </footer>	
+	
+</body>
+</html>
